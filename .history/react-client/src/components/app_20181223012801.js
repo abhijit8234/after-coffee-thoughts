@@ -57,12 +57,12 @@ var App = React.createClass({
           <Post ptitle="Flux flack" pimg={imgOne} date="Nov 2, 2015" postbody={dummyPost} author="Fred Armisen" comments="2" tags=""/>
           <Post ptitle="Inline Styles Aren't Necessary" pimg={imgTwo} postbody={dummyPost} date="Aug 15, 2015" author="Amy Schumer" comments="5"/>
           <Post ptitle="Webpack and ES6" pimg={imgThree} date="Mar 9, 2015" postbody={dummyPost} author="Victoria Bell" comments="3"/>
-          {/* <Post ptitle="No More Goobers" pimg={imgFour} date="Jan 11, 2015" postbody={dummyPost} author="Jack Sherlock" comments="7"/> */}
+          <Post ptitle="No More Goobers" pimg={imgFour} date="Jan 11, 2015" postbody={dummyPost} author="Jack Sherlock" comments="7"/>
       
           <div className="list-of-posts">
               {Object.keys(this.state.posts).map(this.renderPost)}
           </div>
-          
+          <AddPostForm addPost={this.addPost}/>
         </div>
       </div>
     )

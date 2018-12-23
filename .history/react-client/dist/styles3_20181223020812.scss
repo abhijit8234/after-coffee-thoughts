@@ -40,21 +40,21 @@ h1 {
   opacity: 0.92;
   transition: all 0.5s ease;
   border-bottom: 1px solid rgba(200, 200, 200, 0.8);
-}
-.top-bar.scrollNav .menu li,
-.top-bar.scrollNav .menu li a {
-  color: #555;
+  .menu li,
+  .menu li a {
+    color: #555;
+  }
 }
 
 .big-banner {
-  background: url(https://upload.wikimedia.org/wikipedia/commons/1/14/Panorama_puy_de_dome_sud.jpg) center 80%;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/1/14/Panorama_puy_de_dome_sud.jpg)
+    center 80%;
   background-size: cover;
   margin-bottom: 50px;
   transition: 0.5s ease all;
-}
-.big-banner.blurred {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  &.blurred {
+    filter: blur(2px);
+  }
 }
 
 .highlight {
@@ -85,41 +85,41 @@ h1 {
   border-right: none;
   border-bottom: 1px solid #aaa;
   background: #f9f9f9;
-}
-.callout.callout-post .menu a {
-  color: #aaa;
+  .menu a {
+    color: #aaa;
+  }
 }
 
 .blog-post {
   margin-bottom: 70px;
-}
-.blog-post h3 {
-  text-transform: uppercase;
-  color: #666;
-  letter-spacing: 0.05em;
-  font-size: 25px;
-}
-.blog-post small {
-  float: right;
-  margin-top: 20px;
-  font-size: 18px;
+  h3 {
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 0.05em;
+    font-size: 25px;
+  }
+  small {
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+  }
 }
 
 .form-area {
   margin-bottom: 60px;
-}
-.form-area button {
-  background: teal;
-  text-align: center;
-  color: white;
-  padding: 0.7em;
-  border-radius: 4px;
-  width: 100%;
-  margin: 10px auto;
-  transition: 0.3s all ease;
-}
-.form-area button:hover {
-  background: #1a9696;
+  button {
+    background: teal;
+    text-align: center;
+    color: white;
+    padding: 0.7em;
+    border-radius: 4px;
+    width: 100%;
+    margin: 10px auto;
+    transition: 0.3s all ease;
+    &:hover {
+      background: #1a9696;
+    }
+  }
 }
 
 h5 {
@@ -133,12 +133,11 @@ h5 {
   background-color: #f9f9f9;
   border-color: #ddd;
   border-radius: 4px;
+  input {
+    border-color: #ddd;
+    border-radius: 4px;
+  }
 }
-.callout.secondary input {
-  border-color: #ddd;
-  border-radius: 4px;
-}
-
 
 @media screen and (max-width: 900px) {
   .blog-post small {

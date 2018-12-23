@@ -139,6 +139,11 @@ h5 {
   border-radius: 4px;
 }
 
+img {
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+}
 
 @media screen and (max-width: 900px) {
   .blog-post small {
